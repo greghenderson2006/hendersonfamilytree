@@ -16,57 +16,22 @@
 <link rel="shortcut icon" type="/fp/image/x-icon" href="http://www.hendersonfamilytree.com" />
 
 
-<script type="text/javascript">
-<!-- hide from old browsers
-function MakeArray(n) {
-        this.length = n
-        return this
-}
-monthNames = new MakeArray(12)
-monthNames[1] = "January"
-monthNames[2] = "February"
-monthNames[3] = "March"
-monthNames[4] = "April"
-monthNames[5] = "May"
-monthNames[6] = "June"
-monthNames[7] = "July"
-monthNames[8] = "August"
-monthNames[9] = "September"
-monthNames[10] = "October"
-monthNames[11] = "November"
-monthNames[12] = "December"
-dayNames = new MakeArray(7)
-dayNames[1] = "Sunday"
-dayNames[2] = "Monday"
-dayNames[3] = "Tuesday"
-dayNames[4] = "Wednesday"
-dayNames[5] = "Thursday"
-dayNames[6] = "Friday"
-dayNames[7] = "Saturday"
+<script>
+  function formatDate(date) {
+    const dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const day = dayNames[date.getDay()];
+    const month = monthNames[date.getMonth()];
+    const year = date.getFullYear();
+    return `${day}, ${month} ${date.getDate()}, ${year}`;
+  }
 
-function customDateString(oneDate) {
-        var theDay = dayNames[oneDate.getDay() + 1]
-        var theMonth = monthNames[oneDate.getMonth() + 1]
-        var theYear = oneDate.getYear()
-	// Y2K Fix
-   	if ((navigator.appName == "Microsoft Internet Explorer") && (theYear < 2000)) theYear="19" + theYear;
-
-   	if (navigator.appName == "Netscape") theYear=1900 + theYear;
-	return theDay + ", " + theMonth + " " + oneDate.getDate() + ", " + theYear
-}
-
-function dayPart(oneDate) {
-        var theHour = oneDate.getHours()
-        if (theHour <6 )
-                return "Wee Hours"
-        if (theHour < 12)
-                return "Morning"
-        if (theHour < 18)
-                return "Afternoon"
-        return "evening"
-}
-//<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-// end script hiding -->
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.getElementById("current-date");
+    if (el) {
+      el.textContent = formatDate(new Date());
+    }
+  });
 </script>
 
 <link href="style.css" rel="stylesheet" type="text/css"/>
