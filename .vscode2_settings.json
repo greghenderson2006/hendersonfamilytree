@@ -1,10 +1,10 @@
-    update VS Code settings {
-  "gitUserEmail" : "ghend@earthlink.net",
-  "selectedGitignoreTemplate" : "None",
+{
   "gitRemoteURL" : "",
-  "gitUserName" : "Greg Henderson ",
+  "gitUserName" : "",
+  "gitUserEmail" : "",
   "environmentVariables" : [
 
   ],
-  "isGitEnabled" : true
+  "isGitEnabled" : true,
+  "selectedGitignoreTemplate" : "None"
 }
