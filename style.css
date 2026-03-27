@@ -1,75 +1,99 @@
-/* Henderson Family Tree - custom styles */
-
-a:link  {font-family: Verdana, Helvetica, sans-serif; font-weight: normal} 
-
-a:visited {font-family: Verdana, Helvetica, sans-serif;font-weight: normal} 
-
-a:active {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-weight: normal;
-	color: #ECECEC;
-} 
-
-
-H1 { 
-    color: black; 
-    font-family: Arial, Helvetica, sans-serif; 
-    font-weight: bold; 
-    font-size: 225%;  
-} 
-
-
-H2 { 
-    color: black; 
-    font-family: Arial, Helvetica, sans-serif; 
-    font-weight: bold; 
-    font-size: 160%;  
-} 
-
-
-H3 {
-	color: black;
-	font-family: Verdana, Geneva, sans-serif;
-} 
-
-
-TD {
-	font-weight: normal;
-	font-family: Arial, Helvetica, sans-serif;
-} 
-TH {font-family: Arial, Helvetica, sans-serif;} 
-
-
-B { 
-    font-weight: bold ; 
-    font-family: Arial, Helvetica, sans-serif; 
-} 
-
-EM {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-} 
-body {  font-family: Arial, Helvetica, sans-serif}
-.Italic {
-	font-family: "Times New Roman", Times, serif;
-	font-style: italic;
+/* Page layout */
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
 }
-.maintext {
-	font-size: 12px;
-	color: #000000;
-	font-family: Verdana, Geneva, sans-serif;
-	font-weight: normal;
+
+.page-wrap {
+  width: 1000px;
+  margin: 0 auto;
 }
-#Italic {
-	font-style: italic;
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
-#Italic {
-	font-style: italic;
+
+.top-table td {
+  padding: 8px;
+  vertical-align: top;
 }
-td {
+
+.main-table td {
+  padding: 6px 8px;
+  vertical-align: top;
 }
-.italic {
-	font-style: italic;
+
+/* Header */
+.section-header {
+  background-color: #cccc99;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 8px;
 }
-p {
+
+/* Timeline columns */
+.year {
+  width: 23%;
+  text-align: right;
+  white-space: nowrap;
+  font-weight: bold;
+  padding-right: 14px;
+}
+
+.entry {
+  width: 57%;
+  line-height: 1.45;
+}
+
+.photo-cell {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Image block */
+.photo-block {
+  margin: 0;
+}
+
+.photo-block img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.photo-block figcaption {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #555;
+}
+
+/* Intro */
+.intro-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.dropcap {
+  color: #0033cc;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer hr {
+  width: 80%;
+  margin: 20px auto;
 }
