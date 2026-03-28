@@ -1,200 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-  <meta charset="UTF-8">
-  <title>Henderson Family Tree | A genealogy web site</title>
-
-  <meta name="author" content="Gregory Ford Henderson">
-  <meta name="description" content="Welcome to the Henderson Family Tree home page. This web site traces the family genealogy starting with Captain Joseph Henderson and his wife, Angelina Annetta Weaver.">
-  <meta name="keywords" content="Henderson, genealogy, history, Ford, Weaver, Gloor, Boisot, Wells, Duryea, Campbell, Bay Area, Joseph Henderson, family tree">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8">
+  <title>Henderson Family Tree | Genealogy of Captain Joseph Henderson &amp; Descendants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HendersonFamilyTree.com traces the genealogy of Captain Joseph Henderson (1826–1890), Angelina Annetta Weaver, and their descendants, with biographical notes, photos, and research links.">
+  <meta name="author" content="Greg Henderson">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.hendersonfamilytree.com/">
+  <link rel="icon" href="favicon.ico">
   <meta property="og:title" content="Henderson Family Tree">
+  <meta property="og:description" content="Explore the genealogy of Captain Joseph Henderson, Angelina Annetta Weaver, and their descendants.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hendersonfamilytree.com/">
+  <meta property="og:image" content="https://www.hendersonfamilytree.com/images/henderson-coat-of-arms.jpg">
   <meta property="og:site_name" content="Henderson Family Tree">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Henderson Family Tree">
+  <meta name="twitter:description" content="Genealogy of Captain Joseph Henderson and descendants.">
+  <meta name="twitter:image" content="https://www.hendersonfamilytree.com/images/henderson-coat-of-arms.jpg">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <script type="text/javascript">
+    function MakeArray(n) {
+      this.length = n;
+      return this;
+    }
+
+    var monthNames = new MakeArray(12);
+    monthNames[1] = "January";
+    monthNames[2] = "February";
+    monthNames[3] = "March";
+    monthNames[4] = "April";
+    monthNames[5] = "May";
+    monthNames[6] = "June";
+    monthNames[7] = "July";
+    monthNames[8] = "August";
+    monthNames[9] = "September";
+    monthNames[10] = "October";
+    monthNames[11] = "November";
+    monthNames[12] = "December";
+
+    var dayNames = new MakeArray(7);
+    dayNames[1] = "Sunday";
+    dayNames[2] = "Monday";
+    dayNames[3] = "Tuesday";
+    dayNames[4] = "Wednesday";
+    dayNames[5] = "Thursday";
+    dayNames[6] = "Friday";
+    dayNames[7] = "Saturday";
+
+    function customDateString(oneDate) {
+      var theDay = dayNames[oneDate.getDay() + 1];
+      var theMonth = monthNames[oneDate.getMonth() + 1];
+      var theYear = oneDate.getFullYear();
+      return theDay + ", " + theMonth + " " + oneDate.getDate() + ", " + theYear;
+    }
+
+    function dayPart(oneDate) {
+      var theHour = oneDate.getHours();
+      if (theHour < 6) return "Wee Hours";
+      if (theHour < 12) return "Morning";
+      if (theHour < 18) return "Afternoon";
+      return "Evening";
+    }
+  </script>
+
+  <style type="text/css">
+    .style1 {
+      color: #0000FF;
+      font-weight: bold;
+    }
+    .style3 {
+      color: #0000FF;
+      font-weight: normal;
+    }
+  </style>
 </head>
 
-<body class="henderson-body">
+<body bgcolor="#ffffff" text="#000000" link="#000066" vlink="#000066" alink="#00FF00" leftmargin="0" topmargin="0" background="images/hendersonmodern.gif">
+
+  <div id="fb-root"></div>
 
   <table width="751" border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
-      <td bgcolor="#767676">
+      <td height="47" bgcolor="#767676">
         <a href="index.html">
-          <img src="images/newHendersonLogo.jpg" alt="Home" width="751" height="88" border="0">
+          <img src="images/henderson_logo.jpg" alt="Home" width="751" height="88" border="0">
         </a>
       </td>
     </tr>
 
-    <tr>
+    <tr valign="top" align="left">
       <td>
-        <!-- Main two-column layout (left navigation, right content) -->
-        <table width="751" border="0" cellspacing="0" cellpadding="0" align="center">
-          <tr>
-            <td bgcolor="#006633">
-              <span class="header-title">Henderson Family Tree</span>
-            </td>
-          </tr>
+        <table width="751" border="0" cellspacing="0" cellpadding="0">
           <tr valign="top" align="left">
-            <!-- Left column: navigation & photo -->
-            <td>
-              <table width="751" border="0" cellspacing="0" cellpadding="0">
-                <tr valign="top" align="left">
-                  <td width="178">
+            <td width="50" bgcolor="#FFFFFF">&nbsp;</td>
+
+<td bgcolor="#FFFFFF" align="center">
+  <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                <tr>
+                  <td>
+                    <p class="maintext">
+                      Welcome to the Henderson Family Tree homepage. This Website traces the family genealogy starting
+                      with Captain Joseph Henderson and his wife Angelina Annetta Weaver.
+                    </p>
+
+                    <p class="maintext">
+                      The coat of arms is one granted to the Henderson Scottish Clans. It shows a shield colored red on the
+                      left side and silver on the right, divided by a jagged horizontal line. At the top of the shield is a
+                      silver horizontal band on which is a blue crescent between two black ermine spots.
+                    </p>
+
+                    <p class="maintext">
+                      The Hendersons have made many contributions to American history. Not the least of them was Captain
+                      Joseph Henderson who was born in Charleston, South Carolina in 1826. He became a notable Sandy Hook
+                      Pilot in the New York harbor and along the Atlantic Coast during the Civil War.
+                    </p>
+
+                    <p class="maintext">
+                      To get started, click on any of the links below to view the genealogy information for that person in a new page.
+                    </p>
+
+                    <hr width="500" size="2">
+
+                   <ul class="maintext familytree">
+                      <li>
+                        <a href="Joseph.html">Joseph Henderson</a> 1826 - 1890<br>
+                        + <a href="Angelina.html">Angelina Annetta Weaver</a> 1833 - 1909
+
+                        <ul>
+                          <li>
+                            <a href="sarah.htm">Sarah R. Henderson</a> 1850 - 1919<br>
+                            John H. Wells 1846 - 1909
+                          </li>
+
+                          <li>
+                            <a href="maurice.htm">Maurice D. Henderson</a> 1851 - 1923
+                          </li>
+
+                          <li>
+                            <a href="joseph_jr.htm">Joseph Henderson Jr.</a> 1854 - 1908<br>
+                            + Minnie E. Duryea 1856 - 1914
+                            <ul>
+                              <li>
+                                <a href="joseph_henderson_III.htm">Joseph Henderson III</a> 1876 - abt. 1942<br>
+                                + Jennie Strong 1888 - abt. 1942
+                                <ul>
+                                  <li>Jennie J. Henderson 1907 - 19??</li>
+                                </ul>
+                              </li>
+
+                              <li>
+                                <a href="robert_henderson.htm">Robert B. Henderson Sr.</a> 1878 - 1956<br>
+                                + Lillie Elizabeth Castell 1879 - abt. 1950
+                                <ul>
+                                  <li>
+                                    <a href="robert_henderson_Jr.htm">Robert B. Henderson Jr.</a> 1900 - 1941<br>
+                                    + Anna Mae Snell 1920 - 1962
+                                    <ul>
+                                      <li>
+                                        <a href="robert_henderson_III.htm">Robert Boyd Henderson III</a> 1941 -<br>
+                                        + Melvyn Vader
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+
+                              <li>Alexander D. Henderson 1880 - 1890</li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <a href="mary_ann.htm">Mary Ann Henderson</a> 1860 - 1947<br>
+                            + Charles S. Hendrickson 1859 - 1934
+                            <ul>
+                              <li>Angelina Hendrickson 1886 - 1930</li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <a href="angelina_wilcox.htm">Angelina A. Henderson</a> 1863 - 1903<br>
+                            + Frederick Wilcox 1851 - abt. 1932
+                          </li>
+
+                          <li>
+                            <a href="alecSr/AlexSr.html">Alexander Dawson Henderson Sr.</a> 1865 - 1925<br>
+                            + <a href="Ella_Brown.html">Ella Margaret Brown</a> 1869 - 1940
+
+                            <ul>
+                              <li>Joseph Dawson Henderson 1893 - 1893</li>
+
+                              <li>
+                                <a href="alecJr/AlexJr.html">Alexander Dawson Henderson Jr.</a> 1895 - 1964<br>
+                                + <a href="Nonny.html">Mary Barnes Anthony</a> 1899 - 2000
+
+                                <ul>
+                                  <li>
+                                    <a href="Mary_Ella.html">Mary-Ella Henderson</a> 1922 - 2014<br>
+                                    + Stuart Walter Hinrichs 1920 - 1985
+
+                                    <ul>
+                                      <li>
+                                        Robert Stuart Hinrichs 1946 -<br>
+                                        + Elithabeth Welton 1947 -
+                                        <ul>
+                                          <li>Tyler Robert Hinrichs 1968 -</li>
+                                          <li>Heather Elizabeth Hinrichs 1970 -</li>
+                                        </ul>
+                                        *2nd Wife of Robert S. Hinrichs:<br>
+                                        + Anne Williams Rider 1950 -
+                                      </li>
+
+                                      <li>
+                                        Susan Hinrichs 1949 -<br>
+                                        + Peter Thomas 1950 -
+                                        <ul>
+                                          <li>Peter Addenbrook Thomas 1979 -</li>
+                                          <li>Trevor Stuart Thomas 1982 -</li>
+                                          <li>Kristen Alexandra Thomas 1978 -</li>
+                                        </ul>
+                                      </li>
+
+                                      <li>
+                                        Sarah Hinrichs 1953 -<br>
+                                        + Steven Victor Lawrence 195? -
+                                        <ul>
+                                          <li>Gregory Steven Lawrence 1979 -</li>
+                                          <li>Christopher John Lawrence 1983 -</li>
+                                        </ul>
+                                        *2nd Husband of Sarah Hinrichs:<br>
+                                        + John Webster Larson 1941 -
+                                      </li>
+
+                                      <li>
+                                        <a href="peter.htm">Peter Anthony Hinrichs</a> 1957 - 2016<br>
+                                        + Susan Elizabeth Sullivan 1958 -
+                                        <ul>
+                                          <li>Colin Henderson Hinrichs 1995 -</li>
+                                          <li>Charlotte Anthony Hinrichs 1995 -</li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+
+                                    *2nd Husband of Mary-Ella Henderson:<br>
+                                    + John Sloane Griswold 1914 - 2006
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+
+                            <ul>
+                              <li>
+                                <a href="alecIII/AlexIII.html">Alexander Dawson Henderson III</a> 1924 - 2020<br>
+                                + <a href="Patricia/Pat_Ford.html">Patricia Ford</a> 1923 - 2024
+
+                                <ul>
+                                  <li>
+                                    Alexander Dawson Henderson IV 1951 -<br>
+                                    + Sharon E. Galbreath 1955 -
+                                  </li>
+
+                                  <li>
+                                    <a href="Greg/Greg.html">Gregory Ford Henderson</a> 1953 -<br>
+                                    + Susan Patricia Grant 1956 -<br>
+                                    *2nd wife of Gregory F. Henderson:<br>
+                                    Louise Zellie Gloor 1960 -
+                                    <ul>
+                                      <li>Ryan Alexander Henderson 1990 -</li>
+                                      <li>Christopher Ford Henderson 1992 -</li>
+                                      <li>Sean Murray Henderson 1994 -</li>
+                                      <li>Leah Louise Henderson 1996 -</li>
+                                    </ul>
+                                  </li>
+
+                                  <li>
+                                    David Girard Henderson 1955 -<br>
+                                    + Marie Theresa Fanelli 1958 -
+                                    <ul>
+                                      <li>
+                                        Katie Patricia Henderson 1982 -<br>
+                                        + Amir Mohammad Ghoreichi
+                                        <ul>
+                                          <li>Ownen Carl Ghoreichi</li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        Kelly Marie Henderson 1984 -<br>
+                                        + Michael Studer
+                                        <ul>
+                                          <li>Mikko Studer</li>
+                                          <li>Adelaide Marie Studer</li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                    *2nd Wife of David G. Henderson:<br>
+                                    + Lindsay Colleen Levin 1976 -
+                                  </li>
+
+                                  <li>
+                                    Scott Douglas Henderson 1958 -<br>
+                                    + Sandra Duharte 1969 -
+                                    <ul>
+                                      <li>Annette G. Henderson 2006 -</li>
+                                      <li>Chantal Marion Henderson 2008 -</li>
+                                    </ul>
+                                  </li>
+
+                                  <li>
+                                    Holly Alexandra Henderson 1963 -<br>
+                                    + Bijan Fouladi 1964 -
+                                    <ul>
+                                      <li>Farah Fouladi 1993 -</li>
+                                      <li>Flora Fouladi 1998 -</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+
+                                *2nd Wife of Alexander D. Henderson III:<br>
+                                + Madonna Marie Schaffner 1936 -
+                              </li>
+                            </ul>
+
+                            *2nd Wife of Alexander Henderson Jr.<br>
+                            + <a href="lucy.html">Lucia Maria Edmondson Ernst</a> 1910 - 1991
+
+                            <ul>
+                              <li>
+                                <a href="Doug.html">Allen Douglas Henderson</a> 1946 -<br>
+                                + Cassandra Northway
+                                <ul>
+                                  <li>
+                                    Lucia Angeline Henderson 1967 -<br>
+                                    + Adam Levesque
+                                    <ul>
+                                      <li>Haly Henderson Levesque 1998 -</li>
+                                      <li>Connor Douglas Levesque 1996 -</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                                *2nd Wife of Allen Douglas Henderson:<br>
+                                + Barbara Farsang
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <a href="Jerry/Jerry.html">Girard Brown Henderson</a> 1905 - 1983<br>
+                            + Theodora Gregson Huntington 1904 - 1979
+                            <ul>
+                              <li>
+                                Theodora (Terry) G. Henderson 1928 -<br>
+                                + Donald Ives 1912 - 1978
+                                <ul>
+                                  <li>Deirdre Ives 1958 -</li>
+                                  <li>Mark Ives 1959 -</li>
+                                </ul>
+                              </li>
+
+                              <li>
+                                Dariel Henderson 1933 - 1981<br>
+                                + Bertram Robert Firestone 1931 -
+                                <ul>
+                                  <li>Mathew Kent Firestone 1964 -</li>
+                                  <li>Theodore Huntington Firestone 1966 -</li>
+                                  <li>Gregory Welch Firestone 1968 -</li>
+                                </ul>
+                              </li>
+                            </ul>
+
+                            *2nd Wife of Girard B. Henderson:<br>
+                            + Mary Hollingsworth 1905 - 1988
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <td width="227" bgcolor="#FFFFFF">
+              <div align="center">
+                <a href="wc_toc.html">
+                  <img src="images/shield.jpg" alt="Henderson coat of arms" width="188" height="216" border="0">
+                </a>
+                <br>
+              </div>
+
+              <hr align="left" width="200" size="2">
+
+              <table width="152" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="270">
                     <div align="left">
-                      <table width="178" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
-                        <tr valign="top" align="left">
-                          <td width="178" height="35" bgcolor="#669999">
-                            <span class="bios">Henderson Family Tree Navigation</span>
-                          </td>
-                        </tr>
-                        <tr valign="top" align="left">
-                          <td width="178" bgcolor="#669999">
-                            <table width="178" border="0" cellspacing="1" cellpadding="2">
-                              <tr>
-                                <td width="9" bgcolor="#DBF9C2">&nbsp;</td>
-                                <td width="161" bgcolor="#DBF9C2">
-                                  <span class="handmade">Return Home</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="descendants.html">Descendants Chart for Captain Joseph Henderson</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="familyPhotos.html">Henderson Family Photos</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="mailto:hendersonfamilytree@yahoo.com">Contact Us</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="fordtree.html">Ford Family Tree</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="weavertree.html">Weaver Family Tree</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="boisottree.html">Boisot Family Tree</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="wellstree.html">Wells Family Tree</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="duryeatree.html">Duryea Family Tree</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="campbelltree.html">Campbell Family Tree</a></span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td bgcolor="#DBF9C2">&nbsp;</td>
-                                <td bgcolor="#DBF9C2">
-                                  <span class="handmade"><a href="hendersonarticles.html">Articles about the Henderson Family</a></span>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr valign="top" align="left">
-                          <td width="178" bgcolor="#FFFFFF">
-                            <img src="images/spacer.gif" width="10" height="10" alt="">
-                          </td>
-                        </tr>
-                        <tr valign="top" align="left">
-                          <td width="178" bgcolor="#FFFFFF">
-                            <div align="center">
-                              <img src="images/JosephAngelina.jpg" alt="Joseph and Angelina Henderson" width="164" height="227" border="1">
-                            </div>
-                          </td>
-                        </tr>
-                        <tr valign="top" align="left">
-                          <td width="178" bgcolor="#FFFFFF">
-                            <img src="images/spacer.gif" width="10" height="10" alt="">
-                          </td>
-                        </tr>
-                        <tr valign="top" align="left">
-                          <td width="178" bgcolor="#FFFFFF">
-                            <div align="center">
-                              <span class="sidebartext">Captain Joseph Henderson (1826&nbsp;&ndash;&nbsp;1890) and Angelina Annetta Weaver (1833&nbsp;&ndash;&nbsp;1909)</span>
-                            </div>
-                          </td>
-                        </tr>
-                      </table>
+                      <a href="Joseph.html">
+                        <img src="Joseph/Joseph_Henderson_sm1.gif" alt="Joseph Henderson about 1880." width="200" height="244" border="0">
+                      </a>
                     </div>
                   </td>
+                </tr>
 
-                  <!-- Right column: main text -->
-                  <td width="573" bgcolor="#FFFFFF">
-                    <table width="573" border="0" cellspacing="0" cellpadding="10">
-                      <tr>
-                        <td>
-                          <p class="maintext">
-                            Welcome to the Henderson Family Tree homepage. This website traces the family genealogy starting
-                            with Captain Joseph Henderson and his wife Angelina Annetta Weaver.
-                          </p>
+                <tr>
+                  <td>
+                    <div align="center" class="maintext">
+                      <a href="Joseph.html">Captain Joseph Henderson</a><br>
+                      1826-1890
+                    </div>
+                  </td>
+                </tr>
 
-                          <p class="maintext">
-                            Captain Joseph Henderson was born on May 4, 1826 in Perth Amboy, New Jersey and died on February 8, 1890
-                            in San Francisco, California. In 1849 he came to San Francisco to join the Gold Rush, but could not get
-                            up to the gold fields, because his ship was quarantined. He chose instead to become a steamship pilot
-                            and helped guide steamships through the hazardous waters of the Golden Gate and San Francisco Bay for
-                            nearly forty years.
-                          </p>
+                <tr>
+                  <td>
+                    <hr align="left" width="200" size="2"><br>
 
-                          <p class="maintext">
-                            He married Angelina A. Weaver of Brooklyn, New York in 1855 and had five children: Mary Caroline,
-                            John Weaver, William Campbell, Susan Vailes, and Joseph Duryea Henderson. Angelina died on November 8, 1909,
-                            while living with her daughter, Mary C. Newhall in Santa Barbara, California.
-                          </p>
+                    <p class="maintext">
+                      <a href="Boisot.html">Boisot</a><br><br>
+                      <a href="Ford.html">Ford</a><br><br>
+                      <a href="Campbell.html">Campbell</a><br><br>
+                      <a href="Gloor.html">Gloor</a><br><br>
+                      <a href="Stein.htm">Stein</a>
+                    </p>
 
-                          <p class="maintext">
-                            This website also traces the genealogy of ancillary and related families of the Hendersons, including:
-                            the Fords and Timmermans of San Francisco, and the Weavers, Gloors, Boisots, Wells, Duryeas, and Campbells
-                            from the East Coast.
-                          </p>
+                    <hr align="left" width="200" size="2"><br>
 
-                          <p class="maintext">
-                            The information is based on research material, letters, documents, and photographs that our family has
-                            saved for years. We wish to acknowledge the work of Donald and David Henderson, who collected much of
-                            the early genealogy for the 1953 Henderson Family Reunion.
-                          </p>
+                    <p class="maintext">
+                      <strong>Wikipedia articles:</strong><br>
+                      <a href="https://en.wikipedia.org/wiki/Joseph_Henderson_(pilot)" target="_blank" rel="noopener noreferrer">* Joseph Henderson</a><br>
+                      <a href="https://en.wikipedia.org/wiki/Alexander_D._Henderson_Jr." target="_blank" rel="noopener noreferrer">* Alexander D. Henderson Jr.</a><br>
+                      <a href="https://en.wikipedia.org/wiki/Tirey_L._Ford" target="_blank" rel="noopener noreferrer">* Tirey L. Ford</a><br>
+                      <a href="https://en.wikipedia.org/wiki/Emile_Kellogg_Boisot" target="_blank" rel="noopener noreferrer">* Emil K. Boisot</a><br>
+                      <a href="https://en.wikipedia.org/wiki/Lewis_Francis_Byington" target="_blank" rel="noopener noreferrer">* Lewis Francis Byington</a><br>
+                      <a href="https://en.wikipedia.org/wiki/William_Helm" target="_blank" rel="noopener noreferrer">* William Helm</a>
+                    </p>
 
-                          <p class="maintext">
-                            If you have questions or comments, please
-                            <a href="mailto:hendersonfamilytree@yahoo.com">contact us</a>.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
+                    <p class="maintext">
+                      <strong>Amazon Books:</strong><br>
+                      <a href="https://www.amazon.com/Henderson-Family-California-Perfume-Company/dp/1977682049/" target="_blank" rel="noopener noreferrer">* Henderson Family and the California Perfume Company</a><br>
+                      <a href="https://www.amazon.com/Tirey-Lafayette-Ford-Family/dp/198397692X/" target="_blank" rel="noopener noreferrer">* Tirey L. Ford</a><br>
+                      <a href="https://www.amazon.com/Carmel-City-resort-Carmel-Sea/dp/B0FLVP1LBB/" target="_blank" rel="noopener noreferrer">* Carmel City: A resort that became Carmel-by-the-Sea</a><br>
+                      <a href="https://www.amazon.com/Reflections-Journey-Adventure-Travel-Family/dp/B0DWXW59BM/" target="_blank" rel="noopener noreferrer">* Reflections: A Journey Of Adventure, Travel, and Family</a><br>
+                      <a href="https://www.amazon.com/LEWIS-JOSSELYN-Gregory-Ford-Henderson/dp/B0DSTZRQCV/" target="_blank" rel="noopener noreferrer">* Lewis Josselyn: Carmel Photographer</a><br><br><br>
+                    </p>
                   </td>
                 </tr>
               </table>
@@ -202,31 +451,53 @@
           </tr>
         </table>
 
+        <table width="751" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr bgcolor="#ffffff" align="center" valign="top">
+            <td height="117">
+              <blockquote>
+                <hr style="border: 2px solid black;">
+                <p align="center">
+                  <a href="new.html">What's New</a> |
+                  <a href="research.html">About My Research</a>
+                </p>
+                <hr style="border: 2px solid black;">
+
+                <blockquote>
+                  <p align="center" class="maintext">
+                    &copy; 1999-2026 HendersonFamilyTree, All rights reserved.<br>
+                    Send questions or comments to
+                    <a href="mailto:genealogy@Hendersonfamilytree.com?subject=Henderson%20Family%20Tree&amp;body=Dear%20Greg,">genealogy@hendersonfamilytree.com</a>
+                  </p>
+
+                  <p align="center">
+                    <a href="http://www.facebook.com/pages/Hendersonfamilytree/163703117015164" target="_blank" rel="noopener noreferrer">
+                      <img src="images/icon-facebook.gif" alt="Facebook" border="0">
+                    </a>
+                    <a href="https://twitter.com/search?q=%23genealogy&amp;src=typd" target="_blank" rel="noopener noreferrer">
+                      <img src="images/icon-twitter.gif" alt="Twitter" border="0">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=5xkkGW66SKI" target="_blank" rel="noopener noreferrer">
+                      <img src="images/icon-youtube.gif" alt="YouTube" border="0">
+                    </a>
+                    <a href="http://instagram.com/gfhrnder/" target="_blank" rel="noopener noreferrer">
+                      <img src="images/icon_instagram.jpg" alt="Instagram" width="35" height="36" border="0">
+                    </a>
+                  </p>
+
+                  <div class="fb-like-box"
+                       data-href="http://www.facebook.com/pages/Hendersonfamilytree/163703117015164"
+                       data-width="292"
+                       data-height="80"
+                       data-show-faces="true"
+                       data-stream="true"
+                       data-header="true"></div>
+                </blockquote>
+              </blockquote>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
   </table>
-
-  <!-- Footer with automatic "Last updated" date -->
-  <footer class="site-footer">
-    <p id="last-updated" class="footer-text"></p>
-  </footer>
-
-  <!-- Script to fill in the last updated date -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var el = document.getElementById("last-updated");
-      if (!el) return;
-
-      var modified = new Date(document.lastModified);
-      if (isNaN(modified.getTime())) {
-        // Fallback: just show the current date
-        modified = new Date();
-      }
-
-      var options = { year: "numeric", month: "long", day: "numeric" };
-      el.textContent = "Last updated: " + modified.toLocaleDateString("en-US", options);
-    });
-  </script>
-
 </body>
 </html>
