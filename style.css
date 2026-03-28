@@ -1,192 +1,73 @@
-/* =========================
-   Base page layout
-   ========================= */
+a:link  {font-family: Verdana, Helvetica, sans-serif; font-weight: normal} 
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #222;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+a:visited {font-family: Verdana, Helvetica, sans-serif;font-weight: normal} 
+
+a:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #ECECEC;
+} 
+
+
+H1 { 
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size: 225%;  
+} 
+
+
+H2 { 
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size: 160%;  
+} 
+
+
+H3 {
+	color: black;
+	font-family: Verdana, Geneva, sans-serif;
+} 
+
+
+TD {
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+} 
+TH {font-family: Arial, Helvetica, sans-serif;} 
+
+
+B { 
+    font-weight: bold ; 
+    font-family: Arial, Helvetica, sans-serif; 
+} 
+
+EM {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+} 
+body {  font-family: Arial, Helvetica, sans-serif}
+.Italic {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
 }
-
-.page-wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 12px;
-  box-sizing: border-box;
+.maintext {
+	font-size: 12px;
+	color: #000000;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: normal;
 }
-
-/* =========================
-   Tables
-   ========================= */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
+#Italic {
+	font-style: italic;
 }
-
-.top-table td {
-  padding: 8px;
-  vertical-align: top;
+#Italic {
+	font-style: italic;
 }
-
-.main-table td {
-  padding: 8px 10px;
-  vertical-align: top;
+td {
 }
-
-/* Optional subtle spacing between rows */
-.main-table tr {
-  border-bottom: 1px solid #e5e5e5;
+.italic {
+	font-style: italic;
 }
-
-.main-table tr:last-child {
-  border-bottom: none;
-}
-
-/* =========================
-   Section header
-   ========================= */
-
-.section-header {
-  padding: 10px;
-  background-color: #cccc99;
-  color: #222;
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: bold;
-  letter-spacing: 0.02em;
-}
-
-/* =========================
-   Timeline columns
-   ========================= */
-
-.year {
-  width: 23%;
-  padding-right: 14px;
-  text-align: right;
-  vertical-align: top;
-  white-space: nowrap;
-  font-weight: bold;
-}
-
-.entry {
-  width: 57%;
-  vertical-align: top;
-  line-height: 1.5;
-}
-
-.photo-cell {
-  width: 20%;
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* =========================
-   Image and caption blocks
-   ========================= */
-
-.photo-block {
-  margin: 0;
-}
-
-.photo-block img {
-  display: block;
-  max-width: 150px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.photo-block figcaption {
-  margin-top: 6px;
-  font-size: 12px;
-  line-height: 1.35;
-  color: #555;
-  text-align: center;
-}
-
-/* =========================
-   Intro text
-   ========================= */
-
-.intro-text {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.dropcap {
-  color: #0033cc;
-  font-size: 2rem;
-  line-height: 1;
-  font-style: italic;
-  font-weight: normal;
-}
-
-/* =========================
-   Links
-   ========================= */
-
-a {
-  color: #0033cc;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
-/* =========================
-   Footer
-   ========================= */
-
-.footer {
-  margin-top: 24px;
-  text-align: center;
-}
-
-.footer hr {
-  width: 80%;
-  margin: 20px auto;
-  border: 0;
-  border-top: 1px solid #ccc;
-}
-
-/* =========================
-   Responsive adjustments
-   ========================= */
-
-@media (max-width: 768px) {
-  .page-wrap {
-    padding: 0 10px;
-  }
-
-  .year,
-  .entry,
-  .photo-cell {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-
-  .year {
-    padding-right: 0;
-    padding-bottom: 4px;
-  }
-
-  .photo-cell {
-    padding-top: 10px;
-    padding-bottom: 12px;
-  }
-
-  .photo-block img {
-    max-width: 220px;
-  }
+p {
 }
