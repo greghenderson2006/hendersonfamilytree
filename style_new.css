@@ -127,9 +127,8 @@ table {
    ========================= */
 
 .intro-text {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 20px;   /* try 18–24px */
+  line-height: 1.4;  /* improves readability */
 }
 
 .dropcap {
