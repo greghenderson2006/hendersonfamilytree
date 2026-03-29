@@ -48,6 +48,8 @@ table {
   margin-left: 0;
 }
 
+
+
 .main-table td {
   padding: 8px 10px;
   vertical-align: top;
@@ -108,6 +110,7 @@ table {
 .photo-block {
   margin: 0;
 }
+
 
 .photo-block img {
   display: block;
