@@ -117,9 +117,8 @@ table {
   margin: 0 auto;
 }
 
-.top-table .intro-cell {
-  height: 320px;
-  vertical-align: bottom !important;
+.top-table td {
+  vertical-align: bottom;
 }
 
 .intro-bottom {
