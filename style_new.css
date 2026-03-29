@@ -39,6 +39,9 @@ table {
   padding-left: 20px;
   width: 90%;
 }
+.fintro-cell {
+  vertical-align: bottom;
+}
 
 .familytree ul {
   padding-left: 20px;
@@ -112,6 +115,16 @@ table {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.top-table .intro-cell {
+  height: 320px;
+  vertical-align: bottom !important;
+}
+
+.intro-bottom {
+  margin: 0;
+  padding: 0;
 }
 
 .photo-block figcaption {
