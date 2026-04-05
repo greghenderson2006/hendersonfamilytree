@@ -48,19 +48,20 @@ table {
   margin-left: 0;
 }
 
-
+.footer {
+  margin-top: 20px;
+}
 
 .main-table td {
   padding: 8px 10px;
   vertical-align: top;
 }
 
-/* Optional subtle spacing between rows */
 .main-table tr {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.main-table tr:last-child {
+.main-table tr:last-child td {
   border-bottom: none;
 }
 
@@ -127,6 +128,12 @@ table {
 .intro-bottom {
   margin: 0;
   padding: 0;
+}
+
+.footer hr {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .photo-block figcaption {
