@@ -13,24 +13,23 @@ body {
 }
 
 .page-wrap {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 12px;
-  box-sizing: border-box;
+  width: 1000px;
+  margin: 20px auto;
 }
+
+
 
 /* =========================
    Tables
    ========================= */
 
-table {
+.top-table {
   width: 100%;
   border-collapse: collapse;
-  border-spacing: 0;
 }
 
 .top-table td {
-  padding: 8px;
+  padding: 10px;
   vertical-align: top;
 }
 
@@ -48,12 +47,22 @@ table {
   margin-left: 0;
 }
 
+.page-wrap {
+  width: 1000px;
+  margin: 20px auto;
+}
+
 .footer {
   margin-top: 20px;
 }
 
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 .main-table td {
-  padding: 8px 10px;
+  padding: 10px;
   vertical-align: top;
 }
 
@@ -83,40 +92,40 @@ table {
    Timeline columns
    ========================= */
 
+/* LEFT COLUMN (dates) */
 .year {
-  width: 23%;
-  padding-right: 14px;
+  width: 160px;
   text-align: right;
   vertical-align: top;
+  padding: 10px 12px 10px 0;
   white-space: nowrap;
-  font-weight: bold;
 }
 
 .entry {
-  width: 57%;
+  width: auto;
   vertical-align: top;
-  line-height: 1.5;
 }
+
+/* RIGHT COLUMN (images) */
+.photo-side {
+  width: 220px;
+  text-align: center;
+  vertical-align: top;
+  padding-left: 12px;
+}
+
+/* MIDDLE COLUMN (content) */
 
 .photo-cell {
-  width: 20%;
+  width: 170px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
+  padding-left: 12px;
 }
 
-/* =========================
-   Image and caption blocks
-   ========================= */
-
-.photo-block {
-  margin: 0;
-}
-
-
-.photo-block img {
+.photo-cell img {
   display: block;
-  max-width: 150px;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -136,13 +145,7 @@ table {
   margin-right: 0;
 }
 
-.photo-block figcaption {
-  margin-top: 6px;
-  font-size: 12px;
-  line-height: 1.35;
-  color: #555;
-  text-align: center;
-}
+
 
 /* =========================
    Intro text
@@ -195,30 +198,23 @@ a:focus {
    Responsive adjustments
    ========================= */
 
-@media (max-width: 768px) {
-  .page-wrap {
-    padding: 0 10px;
-  }
-
-  .year,
-  .entry,
-  .photo-cell {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-
-  .year {
-    padding-right: 0;
-    padding-bottom: 4px;
-  }
-
-  .photo-cell {
-    padding-top: 10px;
-    padding-bottom: 12px;
-  }
-
-  .photo-block img {
-    max-width: 220px;
-  }
+.photo-block {
+  margin: 0;
 }
+
+.photo-block figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.photo-block img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+  
