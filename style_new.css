@@ -114,6 +114,20 @@ body {
   padding-left: 12px;
 }
 
+.header-photo {
+  max-width: 480px;   /* make it bigger */
+  width: 100%;
+  height: auto;
+}
+
+.photo-cell .header-photo {
+  display: block;
+  margin: 0 auto;
+  max-width: 360px !important;
+  width: 100%;
+  height: auto;
+}
+
 /* MIDDLE COLUMN (content) */
 
 .photo-cell {
