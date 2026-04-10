@@ -138,7 +138,7 @@ body {
   width: 170px;
   text-align: center;
   vertical-align: top;
-  padding-left: 12px;
+  padding-left: 20px; /* increase this */
 }
 
 .photo-cell img {
