@@ -26,6 +26,7 @@ body {
 .top-table {
   width: 100%;
   border-collapse: collapse;
+  
 }
 
 .top-table td {
@@ -100,14 +101,31 @@ body {
   padding: 10px 12px 10px 0; /* space to the right */
   white-space: nowrap;
   font-weight: bold;
-   line-height: 1.4;
+}
+
+.year,
+.entry {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+ vertical-align: top;
 }
 
 .entry {
   width: auto;
   vertical-align: top;
   padding: 10px 0 10px 0; /* optional: small left padding */
-    line-height: 1.4;
+   font-weight: normal;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+.entry a {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /* RIGHT COLUMN (images) */
