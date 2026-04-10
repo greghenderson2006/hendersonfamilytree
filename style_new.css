@@ -99,11 +99,13 @@ body {
   vertical-align: top;
   padding: 10px 12px 10px 0;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .entry {
   width: auto;
   vertical-align: top;
+  padding: 10px 0 10px 0;
 }
 
 /* RIGHT COLUMN (images) */
