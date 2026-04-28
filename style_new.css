@@ -101,6 +101,7 @@ body {
   padding: 10px 12px 10px 0; /* space to the right */
   white-space: nowrap;
   font-weight: bold;
+   line-height: 1.4;
 }
 
 .year,
@@ -115,7 +116,7 @@ body {
   width: auto;
   vertical-align: top;
   padding: 10px 0 10px 0; /* optional: small left padding */
-   font-weight: normal;
+    line-height: 1.4;
 }
 
 html {
