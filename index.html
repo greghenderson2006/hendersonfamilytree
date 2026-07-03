@@ -77,7 +77,20 @@
       font-weight: normal;
     }
   </style>
+
+
 </head>
+
+<script src="./pagefind/pagefind-ui.js"></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true
+    });
+  });
+</script>
 
 <body bgcolor="#ffffff" text="#000000" link="#000066" vlink="#000066" alink="#00FF00" leftmargin="0" topmargin="0" background="images/hendersonmodern.gif">
 
@@ -98,11 +111,18 @@
           <tr valign="top" align="left">
             <td width="50" bgcolor="#FFFFFF">&nbsp;</td>
 
+
 <td bgcolor="#FFFFFF" align="center">
   <table width="100%" border="0" cellspacing="0" cellpadding="10">
                 <tr>
                   <td>
                     <p class="maintext">
+                    
+
+<div id="search"></div>
+<p><em>Search people, families, places, books, Carmel history, photographs, and more.</em></p>
+
+<p>Welcome to the Henderson Legacy Project...</p>
                       Welcome to the Henderson Family Tree homepage. This Website traces the family genealogy starting
                       with Captain Joseph Henderson and his wife Angelina Annetta Weaver.
                     </p>
@@ -484,6 +504,8 @@
                       <img src="images/icon_instagram.jpg" alt="Instagram" width="35" height="36" border="0">
                     </a>
                   </p>
+
+   
 
                   <div class="fb-like-box"
                        data-href="http://www.facebook.com/pages/Hendersonfamilytree/163703117015164"
