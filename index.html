@@ -87,7 +87,13 @@
   window.addEventListener('DOMContentLoaded', () => {
     new PagefindUI({
       element: "#search",
-      showSubResults: true
+      showSubResults: true,
+      processResult: function (result) {
+        if (result.meta && result.meta.image) {
+          result.meta.image = new URL(result.meta.image, result.url).href;
+        }
+        return result;
+      }
     });
   });
 </script>
