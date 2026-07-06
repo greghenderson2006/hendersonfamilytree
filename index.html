@@ -81,6 +81,8 @@
 
 </head>
 
+<link href="./pagefind/pagefind-ui.css" rel="stylesheet">
+
 <script src="./pagefind/pagefind-ui.js"></script>
 
 <script>
@@ -90,7 +92,10 @@
       showSubResults: true,
       processResult: function (result) {
         if (result.meta && result.meta.image) {
-          result.meta.image = new URL(result.meta.image, result.url).href;
+          result.meta.image = new URL(
+            result.meta.image,
+            window.location.origin + result.url
+          ).href;
         }
         return result;
       }
@@ -501,7 +506,7 @@ with Captain Joseph Henderson and his wife Angelina Annetta Weaver.
                 <blockquote>
                   <p align="center" class="maintext">
                     &copy; 1999-2026 HendersonFamilyTree, All rights reserved.<br>
-                    Last updated on July 4, 2026<br>
+                    Last updated on July 5, 2026<br>
                     Send questions or comments to
                     <a href="mailto:ghend@earthlink.net?subject=Henderson%20Family%20Tree&amp;body=Dear%20Greg,">ghend@hearthlink.net</a>
                   </p>
