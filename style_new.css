@@ -5,24 +5,31 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #222;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
+  background-color: #ffffff;
+  color: #333;
 
+  line-height: 1.6;
+}
+.container{
+    max-width:700px;
+    margin:auto;
+    padding:15px;
+}
+h1{
+    text-align:center;
+    color:#2c4b73;
+    margin-bottom:10px;
+}
 .page-wrap {
   max-width: 900px;
+    width: auto;
   margin: 0 auto;
-  padding: 18px;
+  padding: 15px;
 }
 .page-title {
-  margin: 0 0 10px 0;
-  font-size: 1.7rem;
-}
-
-
+  font-size: 1.6rem;
+  }
 
 /* =========================
    Tables
@@ -48,6 +55,50 @@ body {
   vertical-align: bottom;
 }
 
+.family-list{
+    background:#f8f8f8;
+    margin-bottom:14px;
+    padding:15px;
+    border-radius:10px;
+}
+
+.family-list li{
+    background:#f8f8f8;
+    margin-bottom:14px;
+    padding:15px;
+    border-radius:10px;
+}
+
+.family-list a{
+    color:#0056b3;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.family-list a:hover{
+    text-decoration:underline;
+}
+
+.descendants{
+    margin-top:10px;
+    margin-left:18px;
+}
+.descendants li {
+  background: #ffffff;
+  border-left: 3px solid #cccc99;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
 .familytree ul {
   padding-left: 20px;
   margin-left: 0;
@@ -59,9 +110,9 @@ body {
   padding: 18px;
 }
 
-.footer {
-   text-align: center;
-  margin-top: 35px;
+.footer img{
+    max-width:100%;
+    height:auto;
 }
 
 .main-table {
@@ -171,11 +222,7 @@ html {
 }
 
 .header-photo {
-  max-width: 85%;   /* make it bigger */
   width: 260%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
 }
 
 .photo-cell .header-photo {
@@ -211,15 +258,21 @@ img {
   vertical-align: bottom;
 }
 
+.intro{
+    text-align:center;
+    margin-bottom:25px;
+}
+
 .intro-bottom {
   margin: 0;
   padding: 0;
 }
 
 .footer hr {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  width: 80%;
+  margin: 20px auto;
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 
 .footer img {
@@ -227,13 +280,33 @@ img {
   height: auto;
 }
 
+.home-button img{
+    width:66px;
+    height:auto;
+}
+
 /* iPhone / small screens */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  .container,
   .page-wrap {
-    padding: 14px;
+    padding: 12px;
   }
+}
 
+@media (max-width:600px){
 
+    body{
+        font-size:17px;
+    }
+
+    .container{
+        padding:15px;
+    }
+
+    .family-list li{
+        padding:18px;
+    }
+}
 
 /* =========================
    Intro text
@@ -308,5 +381,3 @@ a:focus {
   margin: 0 auto;
       border-radius: 6px;
 }
-
-  
