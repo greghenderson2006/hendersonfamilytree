@@ -23,7 +23,7 @@ h1{
 }
 .page-wrap {
   max-width: 900px;
-    width: auto;
+  width: calc(100% - 30px);
   margin: 0 auto;
   padding: 15px;
 }
@@ -102,12 +102,6 @@ a:focus {
 .familytree ul {
   padding-left: 20px;
   margin-left: 0;
-}
-
-.page-wrap {
-  width: 990px; 
-  margin: 0px auto;
-  padding: 18px;
 }
 
 .footer img{
