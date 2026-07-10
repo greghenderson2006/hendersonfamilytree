@@ -21,11 +21,10 @@ h1{
     color:#2c4b73;
     margin-bottom:10px;
 }
-.page-wrap {
-  max-width: 900px;
-  width: calc(100% - 30px);
-  margin: 0 auto;
-  padding: 15px;
+.page-wrap{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
 }
 .page-title {
   font-size: 1.6rem;
@@ -46,10 +45,22 @@ h1{
   vertical-align: top;
 }
 
-.familytree {
-  margin: 0 auto;
-  padding-left: 20px;
-  width: 90%;
+.bio{
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+    font-size:1.05rem;
+}
+
+.responsive-photo{
+    max-width:100%;
+    height:auto;
+}
+
+.familytree{
+    width:100%;
+    padding-left:10px;
+    box-sizing:border-box;
 }
 .fintro-cell {
   vertical-align: bottom;
