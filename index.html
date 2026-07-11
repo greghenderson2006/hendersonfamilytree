@@ -89,19 +89,11 @@
 <script src="./pagefind/pagefind-ui.js"></script>
 
 <script>
-  window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener("DOMContentLoaded", () => {
     new PagefindUI({
       element: "#search",
       showSubResults: true,
-      processResult: function (result) {
-        if (result.meta && result.meta.image) {
-          result.meta.image = new URL(
-            result.meta.image,
-            window.location.origin + result.url
-          ).href;
-        }
-        return result;
-      }
+      showImages: true
     });
   });
 </script>
