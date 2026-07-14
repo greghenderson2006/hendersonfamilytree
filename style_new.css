@@ -101,6 +101,10 @@ h1{
     text-decoration:underline;
 }
 
+.family-photo {
+    text-align: center;
+}
+
 .descendants{
     margin-top:10px;
     margin-left:18px;
