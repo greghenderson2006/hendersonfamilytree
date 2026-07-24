@@ -274,14 +274,6 @@ html {
   margin: 0 auto;
 }
 
-.photo-cell .header-photo {
-  display: block;
-  width: auto;
-  max-width: 360px;
-  height: auto;
-  margin: 0 auto;
-}
-
 /* MIDDLE COLUMN (content) */
 
 .photo-cell {
