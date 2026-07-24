@@ -285,9 +285,7 @@ html {
 /* MIDDLE COLUMN (content) */
 
 .photo-cell {
-  width: auto;
-  padding: 10px;
-  text-align: center;
+  width: 240px;
 }
 
 .photo-cell img {
@@ -449,8 +447,7 @@ a:focus {
 
 .photo-block {
   margin: 0;
-    text-align: center;
-     margin-top: 12px;
+  text-align: center;
 }
 
 .photo-block figcaption {
@@ -461,10 +458,10 @@ a:focus {
 }
 
 .photo-block img {
-  width: 100%;
-  max-width: 220px;
+  width: 220px;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-      border-radius: 6px;
+  border-radius: 6px;
 }
