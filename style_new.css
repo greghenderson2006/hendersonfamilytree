@@ -299,6 +299,21 @@ img {
     align-items: flex-start;
 }
 
+.side-by-side-images img {
+    display: block;
+    max-width: 100%;
+}
+.side-by-side-images figure {
+    margin: 0;
+    text-align: center;
+}
+
+.side-by-side-images figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
 .image-item {
     text-align: center;
 }
