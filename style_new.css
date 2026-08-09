@@ -197,12 +197,12 @@ a:focus {
   width: 160px;
   text-align: right;
   vertical-align: top;
-  padding: 10px 12px 10px 0; /* space to the right */
+  padding: 10px 12px 10px 0;
   white-space: nowrap;
   font-weight: bold;
-   line-height: 1.4;
-       margin-bottom: 8px;
-    font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
 }
 
 .timeline-item {
