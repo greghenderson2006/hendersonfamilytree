@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="utf-8">
 
  <!-- Top table 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,104 +15,79 @@
 
   <meta name="distribution" content="global">
 
-For Pagefind image metadata, I recommend a root-relative path rather than the full website URL.
-If the image is located at:
-
-Henderson/Mary Barnes Billings Anthony.jpg
-use:
-<meta data-pagefind-meta="image[content]"
-      content="/Henderson/Mary%20Barnes%20Billings%20Anthony.jpg">
-Why this is preferable
-The leading / tells the browser to start at the root of the website, so it resolves to the correct image regardless of which folder contains the HTML page.
-I would not use just:
-
-content="Mary%20Barnes%20Billings%20Anthony.jpg"
-unless the image is in exactly the same directory as the HTML page. Relative paths like that can become troublesome when Pagefind results are displayed from another directory.
-For og:image, however, the full URL is appropriate:
-
-<meta property="og:image"
-      content="https://www.hendersonfamilytree.com/Henderson/Mary%20Barnes%20Billings%20Anthony.jpg">
-So a good standard for your site is:
-<meta property="og:image"
-      content="https://www.hendersonfamilytree.com/Henderson/Mary%20Barnes%20Billings%20Anthony.jpg">
-
-<meta data-pagefind-meta="image[content]"
-      content="/Henderson/Mary%20Barnes%20Billings%20Anthony.jpg">
-One more suggestion: going forward, avoid spaces in new image filenames. Something like:
-mary_barnes_billings_anthony.jpg
-is much easier to manage than:
-Mary Barnes Billings Anthony.jpg
-You don't need to rename your existing images just for Pagefind, though.
-The following show no image results for pagefind. They are images:
-Paste the image lines or the relevant <head> metadata for those pages, and I can
-Alec & Mary-Ella
-Lucy E. Henderson's Crypt
-
-Alec & Mary-Ella
-Alexander D. Henderson Crypt
-
-I checked both live pages. Pagefind is finding the pages, but the pages are titled “Alec & Mary-Ella”, which is why that appears as the bold search-result title. Each page itself contains essentially just an image plus a caption.
-For these image-only pages, I would add explicit Pagefind image metadata and give each page its own meaningful <title>.
-
-For lucy_henderson_crypt.html, use something like:
-
-<head>
-  <meta charset="UTF-8">
-
-  <title>Lucy E. Henderson's Crypt</title>
-
   <meta data-pagefind-meta="image[content]"
-        content="images/lucy.jpg">
+      content="images/lucy.jpg">
 
   <meta name="description" content="Biography of Lucia Maria Ernst Henderson Edmondson, including her family, philanthropy, and support of education in Florida.">
 
-  <link rel="stylesheet" href="style_new.css" type="text/css">
+  <link rel="stylesheet" href="style_new.css" 
+  type="text/css">
 
 </head>
 
+ <!-- Top table -->
 <body>
 
- <!-- Header section --> 
-
-  <div class="page-wrap">
-    <table class="top-table" style="margin: 0 auto;">
-      <tr style="height:300px;">
-        <td>
-          <img src="images/lucy.jpg" 
+   <div class="page-wrap">
+    <table class="top-table">
+      <tr>
+     <td class="photo-cell">
+ <img class="header-photo" src="images/lucy.jpg" 
           alt="Lucia Maria Ernst" 
           title="Lucia Maria Ernst">
         </td>
         </tr>
-<tr>
-     <td style="vertical-align: bottom;">
-          <p class="intro-text">
-               Lucia Maria Ernst (1910 - 1991) was a philanthropist and supporter of education in Florida. She was the wife of Alexander D. Henderson, a businessman and philanthropist who was one of the founders of the A. D. Henderson Foundation and Saint Andrew’s School in Boca Raton, Florida.
-          </p>
-        </td>
-      </tr>
+
+ <!-- Header title text-->
+        <tr>
+        <td class="intro-cell">
+           <div class="intro-bottom">
+            <h1 class="page-title">
+            Lucy E. Henderson
+          </h1>
+
+  <!-- Header text-->
+    <p class="intro-text">
+    Lucia Maria Ernst (1910 - 1991) was a philanthropist and supporter of education in Florida. She was the wife of Alexander D. Henderson, a businessman and philanthropist who was one of the founders of the A. D. Henderson Foundation and Saint Andrew’s School in Boca Raton, Florida.
+    </p>
+    </div>
+  </td>
+</tr>
       
+<!-- Important Facts -->
       <tr>
-        <td colspan="3" class="section-header">
+        <td colspan="2" class="section-header">
           Important Facts</td>
       </tr>
     </table>
 
+ <!-- Main table -->
    <table class="main-table">
       <tr>
-        <td width="158" align="right" valign="top">
-          <strong>September 12, 1910</strong></td>
-        <td valign="top">
-          Lucia Maria Ernst was born in Brooklyn, New York. She was the daughter of Lucia Berth Doering and Joseph Ernst.</td>
-        <td width="215" rowspan="3" align="center" valign="top">
-          <img src="images/alexJr_suite_120.gif" width="120" height="120" alt="A. D. Henderson Jr.">
-          <br><br>
-          <span class="maintext">A. D. Henderson Jr.</span>
+        <td class="year">September 12, 1910
+        </td>
+     <td class="entry">
+          Lucia Maria Ernst was born in Brooklyn, New York. She was the daughter of Lucia Berth Doering and Joseph Ernst.
+        </td>
+        <td width="215" 
+        rowspan="3" 
+        align="center" 
+        valign="top">
+          <img src="images/alexJr_suite_120.gif" 
+          width="120" 
+          height="120" 
+          alt="A. D. Henderson Jr.">
+          <br>
+          <span class="maintext">
+            A. D. Henderson Jr.
+          </span>
         </td>
       </tr>
 
       <tr>
         <td align="right" valign="top">&nbsp;</td>
-        <td valign="top">Lucy worked for Avon Products as a secretary.</td>
+        <td valign="top">
+          Lucy worked for Avon Products as a secretary.</td>
       </tr>
 
       <tr>
@@ -191,7 +166,7 @@ For lucy_henderson_crypt.html, use something like:
         <td valign="top">
           After Mr. Henderson died in 1964, Mrs. Henderson continued her involvement in civic affairs and established the <a href="http://adhus.fau.edu" target="_blank" rel="noopener noreferrer">Alexander D. Henderson University School</a> at Florida Atlantic University in her late husband’s name.</td>
       </tr>
- s
+ 
       <tr>
         <td align="right" valign="top"><strong>September 30, 1965</strong></td>
         <td valign="top">
@@ -289,9 +264,10 @@ For lucy_henderson_crypt.html, use something like:
       </tr>
 
       <tr>
-        <td align="right" valign="top"><strong>Early 1970s</strong></td>
+        <td align="right" valign="top">
+          <strong>Early 1970s</strong></td>
         <td valign="top">
-          <p>She was a founder of Planned Parenthood of South Palm Beach and Broward Counties and remained a supporter and contributor for life. Planned Parenthood’s library in Boca Raton was named in her honor.</p>
+          She was a founder of Planned Parenthood of South Palm Beach and Broward Counties and remained a supporter and contributor for life. Planned Parenthood’s library in Boca Raton was named in her honor.</p>
           <p>Mrs. Henderson Edmondson founded the Discovery Center and started the first dyslexia clinics in the public schools of Palm Beach County.</p>
         </td>
       </tr>
