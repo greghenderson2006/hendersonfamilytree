@@ -45,11 +45,9 @@ h1{
     margin-bottom:10px;
 }
 .page-wrap {
-  width: 100%;
-  max-width: 900px;
+  width: 95%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .page-title {
