@@ -347,18 +347,23 @@ img {
 }
 
 .side-by-side-images img {
-    display: block;
-    max-width: 100%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid #555;
+  box-sizing: border-box;
 }
+
 .side-by-side-images figure {
-    margin: 0;
-    text-align: center;
+  width: 300px;
+  margin: 0;
+  text-align: center;
 }
 
 .side-by-side-images figcaption {
-    margin-top: 8px;
-    font-size: 0.9em;
-    font-style: italic;
+  margin-top: 6px;
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 .image-item {
