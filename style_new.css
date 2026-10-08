@@ -322,7 +322,7 @@ html {
 
 .photo-cell img {
   display: block;
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
   margin: 0 auto;
 }
