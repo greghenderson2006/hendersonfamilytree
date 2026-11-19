@@ -193,6 +193,24 @@ a:focus {
   margin-left: 0;
 }
 
+main {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+figure {
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 .main-table {
   width: 100%;
   border-collapse: collapse;
@@ -398,27 +416,7 @@ img {
   text-align: center;
 }
 
-   .footer p {
-      text-align: center;
-      margin: 10px 0;
-    }
-
-.footer img{
-    max-width:100%;
-    height:auto;
-    
-}
-.footer hr {
-  width: 80%;
-  margin: 20px auto;
-  border: 0;
-  border-top: 1px solid #ccc;
-}
-
-.footer img {
-  max-width: 100%;
-  height: auto;
-}
+ 
 
  hr {
       margin: 25px 0;
@@ -500,6 +498,28 @@ a:focus {
   margin: 20px auto;
   border: 0;
   border-top: 1px solid #ccc;
+}
+
+  .footer p {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+.footer img{
+    max-width:100%;
+    height:auto;
+    
+}
+.footer hr {
+  width: 80%;
+  margin: 20px auto;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* =========================
