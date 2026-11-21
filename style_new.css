@@ -3,6 +3,43 @@
    July 14, 2025
    Modified by: Greg Henderson on August 7, 2026
    ========================= */
+.notes-with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 20px 0;
+}
+
+.notes-text {
+  flex: 1;
+}
+
+.notes-text h2 {
+  margin-top: 0;
+}
+
+.side-figure {
+  flex: 0 0 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.side-figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stack vertically on narrow phone screens */
+@media (max-width: 600px) {
+  .notes-with-image {
+    flex-direction: column;
+  }
+.side-figure {
+  flex: 0 0 200px;
+  margin: 0;
+  text-align: center;
+}
+}
 
    .journal-grid {
   display: grid;
