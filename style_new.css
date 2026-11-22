@@ -52,7 +52,9 @@ h2.gallery-title {
   width: 100%;
 }
 
-
+.notes-with-image .notes-text h2 {
+  text-align: center;
+}
    .notes-with-image {
   display: flex;
   align-items: flex-start;
